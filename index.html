@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Practise</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <style>
+      .parent {
+        min-height: 400px;
+        background: red;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: yellow;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card parent">
+      <div class="child">
+        <h1>Some Heading</h1>
+        <p>Loream ipsum dolar sit amet.</p>
+        <button>Click Me</button>
+      </div>
+    </div>
+  </body>
+</html>
