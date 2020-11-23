@@ -8,15 +8,27 @@
         width: 500px;
         height: 400px;
         margin: 100px auto 0;
-        background: #e3e3e3;
-        grid-template-columns: auto auto auto auto;
-        /* grid-template-rows: 50px 25px auto; */
+        /* background: #e3e3e3; */
+        
+        grid-template-columns: repeat(4, auto);
         grid-gap: 1em;
       }
 
       .item{
-        border: 5px solid red;
+        border: 1px solid #999;
       }
+
+      .item:first-child {
+        background: red;
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+
+
     </style>
   </head>
   <body>
