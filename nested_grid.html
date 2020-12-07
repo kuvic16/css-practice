@@ -8,7 +8,9 @@
       }
 
       .container {
-
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-gap: 10px;
       }
 
       .box {
@@ -16,6 +18,15 @@
         color: #fff;
         border-radius: 2px;
         padding: 10px;
+      }
+
+      .a {
+        grid-column: 3 / span 2;
+        grid-row: 3;
+      }
+
+      .b {
+        grid-column: 3/5;
       }
 
     </style>
